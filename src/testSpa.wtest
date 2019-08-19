@@ -1,0 +1,9 @@
+import personas.*
+
+/**
+ * ¿Qué clases de equivalencia tengo?
+ * ¿Cuántos tests necesito?
+ */
+test "a definir" {
+	assert.that(true)
+}

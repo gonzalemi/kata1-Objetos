@@ -1,0 +1,54 @@
+import personas.adriano
+
+const nivelInicialDeContracturaDeAdriano = 5
+
+test "Frescura para programar inicial de Adriano" {
+	assert.notThat(adriano.frescoParaProgramar())
+}
+
+test "Nivel de contractura inicial de Adriano" {
+	assert.equals(nivelInicialDeContracturaDeAdriano, adriano.nivelDeContractura())
+}
+
+test "Adriano recibe masajes una vez, baja su nivel de contractura" {
+	adriano.recibirMasajes()
+	assert.equals(3, adriano.nivelDeContractura())
+}
+
+test "Adriano recibe masajes muchas veces, baja su nivel de contractura hasta el mínimo" {
+	adriano.recibirMasajes()
+	adriano.recibirMasajes()
+	adriano.recibirMasajes()
+	adriano.recibirMasajes()
+	assert.equals(0, adriano.nivelDeContractura())
+}
+
+test "Adriano se da un baño de vapor y cambia su estado para programar" {
+	adriano.darseUnBanioDeVapor()
+	assert.that(adriano.frescoParaProgramar())
+}
+
+test "Adriano come un Big Mac y cambia su estado para programar" {
+	adriano.comerseUnBigMac()
+	assert.that(adriano.frescoParaProgramar())
+}
+
+test "Adriano codea y se contractura" {
+	adriano.codear()
+	assert.equals(6, adriano.nivelDeContractura())
+}
+
+test "Adriano codea y cambia su estado para programar" {
+	adriano.codear()
+	assert.notThat(adriano.frescoParaProgramar())
+}
+
+test "Adriano tiene un día de trabajo y cambia su estado para programar" {
+	adriano.diaDeTrabajo()
+	assert.notThat(adriano.frescoParaProgramar())
+}
+
+test "Adriano tiene un día de trabajo y se contractura" {
+	adriano.diaDeTrabajo()
+	assert.equals(7, adriano.nivelDeContractura())
+}

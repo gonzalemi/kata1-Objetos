@@ -1,0 +1,55 @@
+import personas.olivia
+
+const concentracionInicialDeOlivia = 4
+const concentracionBaseAlDiscutir = 5
+
+test "Olivia inicialmente tiene 4 de grado de concentracion" {
+	assert.equals(concentracionInicialDeOlivia, olivia.gradoDeConcentracion())
+}
+
+test "Olivia recibe masajes pocas veces y su grado de concentracion aumenta un poco" {
+	olivia.recibirMasajes()
+	assert.equals(olivia.gradoDeConcentracion(), 6)	
+}
+
+test "Olivia recibe masajes muchas veces y su grado de concentracion aumenta bastante más al estar relajada" {
+	olivia.recibirMasajes()
+	olivia.recibirMasajes()
+	olivia.recibirMasajes()
+	olivia.recibirMasajes()
+	assert.equals(olivia.gradoDeConcentracion(), 18)	
+}
+
+test "Inicialmente Olivia no es feliz" {
+	assert.notThat(olivia.esFeliz())
+}
+
+test "Luego de 2 masajes Olivia es feliz" {
+	olivia.recibirMasajes()
+	olivia.recibirMasajes()
+	assert.that(olivia.esFeliz())
+}
+
+test "Si discute una sola vez, el estado inicial Olivia queda su concentración inicial" {
+	olivia.discutir()
+	assert.equals(olivia.gradoDeConcentracion(), concentracionInicialDeOlivia)
+}
+
+test "Si Olivia discute mucho, su estado inicial queda con el mismo grado de concentración que la primera vez que discute" {
+	olivia.discutir()
+	olivia.discutir()
+	olivia.discutir()
+	olivia.discutir()
+	assert.equals(olivia.gradoDeConcentracion(), concentracionInicialDeOlivia)
+}
+
+test "Si Olivia se da un masaje y luego discute, su estado inicial queda con el máximo grado de concentración posible" {
+	olivia.darseUnBanioDeVapor()
+	olivia.discutir()
+	assert.equals(olivia.gradoDeConcentracion(), concentracionBaseAlDiscutir)
+}
+
+test "Olivia inicialmente recibe un baño de vapor y aumenta su concentración" {
+	olivia.darseUnBanioDeVapor()
+	assert.equals(olivia.gradoDeConcentracion(), concentracionBaseAlDiscutir)
+}
