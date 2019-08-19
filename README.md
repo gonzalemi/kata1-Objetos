@@ -1,10 +1,12 @@
 # Kata 1 - SPA
 
+## IMPORTANTE: Tareas
+
 - [ ] TODO: Integrantes
-- [ ] Resolver la implementación de Olivia
-- [ ] Resolver la implementación de Adriano
-- [ ] Agregar tests del objeto que representa al Spa
-- [ ] TODO: Badge
+- [ ] Resolver la implementación de Olivia => archivo `olivia.wlk` (los tests están resueltos en el archivo `testOlivia.wtest`)
+- [ ] Resolver la implementación de Adriano => archivo `adriano.wlk` (los tests están resueltos en el archivo `testAdriano.wtest`)
+- [ ] Agregar tests del objeto que representa al Spa (archivo `testSpa.wtest`) y la implementación del spa (archivo `spa.wlk`)
+- [ ] TODO: agregar Badge de Travis
 
 ## Enunciado
 
