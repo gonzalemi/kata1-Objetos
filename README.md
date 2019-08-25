@@ -3,8 +3,8 @@
 ## IMPORTANTE: Tareas
 
 - [ ] TODO: Integrantes
-- [ ] Resolver la implementación de Olivia => archivo `olivia.wlk` (los tests están resueltos en el archivo `testOlivia.wtest`)
-- [ ] Resolver la implementación de Adriano => archivo `adriano.wlk` (los tests están resueltos en el archivo `testAdriano.wtest`)
+- [ ] Resolver la implementación de Olivia => archivo `personas.wlk` (los tests están resueltos en el archivo `testOlivia.wtest`)
+- [ ] Resolver la implementación de Adriano => archivo `personas.wlk` (los tests están resueltos en el archivo `testAdriano.wtest`)
 - [ ] Agregar tests del objeto que representa al Spa (archivo `testSpa.wtest`) y la implementación del spa (archivo `spa.wlk`)
 - [ ] TODO: agregar Badge de Travis
 
