@@ -38,6 +38,13 @@ test "Adriano codea y se contractura" {
 	assert.equals(6, adriano.nivelDeContractura())
 }
 
+test "Adriano codea más de una vez y se contractura lo mismo que si codeara una sola vez" {
+	adriano.codear()
+	adriano.codear()
+	adriano.codear()
+	assert.equals(6, adriano.nivelDeContractura())
+}
+
 test "Adriano codea y cambia su estado para programar" {
 	adriano.codear()
 	assert.notThat(adriano.frescoParaProgramar())
@@ -48,7 +55,8 @@ test "Adriano tiene un día de trabajo y cambia su estado para programar" {
 	assert.notThat(adriano.frescoParaProgramar())
 }
 
-test "Adriano tiene un día de trabajo y se contractura" {
+test "Adriano tiene un día de trabajo y se contractura un poco" {
 	adriano.diaDeTrabajo()
-	assert.equals(7, adriano.nivelDeContractura())
+	assert.equals(6, adriano.nivelDeContractura())
 }
+

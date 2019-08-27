@@ -39,7 +39,7 @@ Las acciones relevantes que tiene para este modelo son:
 
 - cuando se da un baño de vapor, queda fresco para programar.
 - al comerse un Big Mac vuelve a quedar fresco para programar (?, así lo definió el usuario).
-- cuando codea, su nivel de contractura aumenta 1 punto la primera vez. Indefectiblemente queda quemado para programar (lo opuesto a fresco) cada vez que trabaja.
+- cuando codea (trabaja), su nivel de contractura aumenta 1 punto la primera vez. Indefectiblemente queda quemado para programar (lo opuesto a fresco) cada vez que trabaja.
 
 Un `diaDeTrabajo()` de Adriano consiste en: codear, comerse un big mac y volver a codear.
 
