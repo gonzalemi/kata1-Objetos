@@ -5,5 +5,5 @@ import personas.*
  * ¿Cuántos tests necesito?
  */
 test "a definir" {
-	assert.that(true)
+	assert.that(false)
 }
