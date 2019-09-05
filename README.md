@@ -59,8 +59,14 @@ Para que la kata esté completa debe pasar los tests que se proveen, pero ademá
 ## Contestar
 
 1. ¿Dónde aparece el concepto polimorfismo? Justifique.
+//El concepto de polimorfismo aparece en spa, cuando a una persona le doy los mensajes "recibir masajes"
+o "darse un banio de vapor" ya que encasillo en "persona" a todos los objetos que tengan definidos ambos metodos.
+
 2. ¿Quién es el objeto que se beneficia de ese concepto? Justifique.
+Se beneficia de ese concepto el objeto spa, ya que es quien puede trabajar con cualquier objeto "persona"
+
 3. ¿De qué tipo es el parámetro `persona` de `spa`?
+El tipo persona engloba a cualquier objeto que tenga definidos los metodos "recibirMasajes" y "darseUnBanioDeVapor"
 
 ```wollok
 method atender(persona) {

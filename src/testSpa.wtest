@@ -1,9 +1,24 @@
 import personas.*
+import spa.*
 
 /**
  * ¿Qué clases de equivalencia tengo?
+ *Rta: tengo solamente dos clases de equivalencia, es decir, una por persona.
  * ¿Cuántos tests necesito?
+ *Rta: necesito 3 test, ya que debo testear que los atributos que se modifican de cada persona lo hagan de manera correcta,
+dado que en este caso particular, la cantidad de individuos coincide con los casos de equivalencia.
  */
-test "a definir" {
-	assert.that(false)
+test "el spa atiende a Adriano y Adriano baja su nivel de contractura" {
+	spa.atender(adriano)
+	assert.equals(3, adriano.nivelDeContractura())
+}
+
+test "el spa atiende a Adriano y está fresco para programar" {
+	spa.atender(adriano)
+	assert.that(adriano.frescoParaProgramar())
+}
+
+test "el spa atiende a Olivia y Olivia pasa a estar feliz"{
+	spa.atender(olivia)
+		assert.that(olivia.esFeliz())
 }
