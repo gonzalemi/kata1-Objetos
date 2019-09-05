@@ -1,4 +1,6 @@
 # Kata 1 - SPA
+[![Build Status](https://travis-ci.com/pdep-utn/kata-1-oo-spa-e-no-de-error-de-estupido.svg?token=QDsv1pyYQRXDMK6xa4xz&branch=master)](https://travis-ci.com/pdep-utn/kata-1-oo-spa-e-no-de-error-de-estupido)
+
 
 ## IMPORTANTE: Tareas
 
