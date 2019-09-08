@@ -1,6 +1,6 @@
 # Kata 1 - SPA
 
-# Integrante: Emiliano Gonzalez (gonzalemi)
+# Integrante: Emiliano Gonzalez (gonzalemi).
 
 ## IMPORTANTE: Tareas
 
