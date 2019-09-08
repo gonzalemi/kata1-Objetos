@@ -4,10 +4,10 @@
 
 ## IMPORTANTE: Tareas
 
-- [ ] Definir Integrantes
-- [ ] Resolver la implementación de Olivia => archivo `personas.wlk` (los tests están resueltos en el archivo `testOlivia.wtest`)
-- [ ] Resolver la implementación de Adriano => archivo `personas.wlk` (los tests están resueltos en el archivo `testAdriano.wtest`)
-- [ ] Agregar tests del objeto que representa al Spa (archivo `testSpa.wtest`) y la implementación del spa (archivo `spa.wlk`)
+- [X] Definir Integrantes
+- [X] Resolver la implementación de Olivia => archivo `personas.wlk` (los tests están resueltos en el archivo `testOlivia.wtest`)
+- [X] Resolver la implementación de Adriano => archivo `personas.wlk` (los tests están resueltos en el archivo `testAdriano.wtest`)
+- [X] Agregar tests del objeto que representa al Spa (archivo `testSpa.wtest`) y la implementación del spa (archivo `spa.wlk`)
 - [ ] Agregar Badge de Travis
 
 ## Enunciado
@@ -61,8 +61,14 @@ Para que la kata esté completa debe pasar los tests que se proveen, pero ademá
 ## Contestar
 
 1. ¿Dónde aparece el concepto polimorfismo? Justifique.
+El concepto aparece en el objeto SPA el cual puede recibir distintas personas
+y ejecutar las acciones de forma independiente.
+
 2. ¿Quién es el objeto que se beneficia de ese concepto? Justifique.
+El SPA se beneficia ya que puede abstraerse de la lógica de negocio particular de cada persona
+
 3. ¿De qué tipo es el parámetro `persona` de `spa`?
+Es un objeto que representa a cualquier persona
 
 ```wollok
 method atender(persona) {
