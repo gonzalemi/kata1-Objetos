@@ -5,7 +5,7 @@ import spa.*
  * ¿Qué clases de equivalencia tengo? 2 (uno por cada persona)
  * ¿Cuántos tests necesito? 2 (uno por cada persona)
  */
- 
+
 test "Adriano visita el SPA" {
 	spa.atender(adriano)
 	assert.equals(adriano.nivelDeContractura(), 3)

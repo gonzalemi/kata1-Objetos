@@ -8,25 +8,37 @@ object olivia {
 	}
 
 	method recibirMasajes() {
+		const cantidadDeMasajesLimite = 3
+		const concentracionPorRecibirMasajesMenorALimite = 2
+		const concentracionPorRecibirMasajesMayorOIgualALimite = 5
+				
 		masajesRecibidos = masajesRecibidos + 1
-		if (masajesRecibidos < 3) {
-			self.actualizarGradoDeConcentracion(2)
+		
+		if (masajesRecibidos < cantidadDeMasajesLimite) {
+			self.actualizarGradoDeConcentracion(concentracionPorRecibirMasajesMenorALimite)
 		} else {
-			self.actualizarGradoDeConcentracion(5)
+			self.actualizarGradoDeConcentracion(concentracionPorRecibirMasajesMayorOIgualALimite)
 		}
 	}
 
 	method darseUnBanioDeVapor() {
-		self.actualizarGradoDeConcentracion(1)
+		const concentracionPorBanioDeVapor = 1
+		
+		self.actualizarGradoDeConcentracion(concentracionPorBanioDeVapor)
 	}
 
 	method esFeliz() {
-		return gradoDeConcentracion >= 7
+		const valorLimiteFelicidad = 7
+		
+		return gradoDeConcentracion >= valorLimiteFelicidad
 	}
 
 	method discutir() {
-		if (gradoDeConcentracion > 4) {
-			gradoDeConcentracion = 5
+		const valorLimitePorDiscutir = 4
+		const concentracionPorDiscutir = 5
+		
+		if (gradoDeConcentracion > valorLimitePorDiscutir) {
+			gradoDeConcentracion = concentracionPorDiscutir
 		}
 	}
 
@@ -39,7 +51,7 @@ object adriano {
 	var nivelDeContractura = 5
 	var frescoParaProgramar = false
 	var cantidadDeTrabajos = 0
-	
+
 	method frescoParaProgramar() {
 		return frescoParaProgramar
 	}
@@ -47,17 +59,22 @@ object adriano {
 	method nivelDeContractura() {
 		return nivelDeContractura
 	}
-	
+
 	method actualizarNivekDeContractura(cantidad) {
-		if ((nivelDeContractura + cantidad) > 0) {
-			nivelDeContractura = nivelDeContractura + cantidad
+		var nivelDeContracturaActualizado = nivelDeContractura + cantidad
+		const nivelDeContracturaLimite = 0
+		
+		if ((nivelDeContracturaActualizado) > nivelDeContracturaLimite) {
+			nivelDeContractura = nivelDeContracturaActualizado
 		} else {
-			nivelDeContractura = 0
+			nivelDeContractura = nivelDeContracturaLimite
 		}
 	}
 
 	method recibirMasajes() {
-		self.actualizarNivekDeContractura(-2)
+		const nivelDeContracturaPorMasajes = -2
+		
+		self.actualizarNivekDeContractura(nivelDeContracturaPorMasajes)
 	}
 
 	method setFrescoParaParaProgramar() {
@@ -75,13 +92,16 @@ object adriano {
 	method comerseUnBigMac() {
 		self.setFrescoParaParaProgramar()
 	}
-	
+
 	method codear() {
+		const cantidadDeTrabajosLimite = 0
+		const nivelDeContracturaPorCodear = 1
+		
 		self.setQuemadoParaProgramar()
 		
-		if (cantidadDeTrabajos == 0) {
-			self.actualizarNivekDeContractura(1)
-			cantidadDeTrabajos =  cantidadDeTrabajos + 1
+		if (cantidadDeTrabajos == cantidadDeTrabajosLimite) {
+			self.actualizarNivekDeContractura(nivelDeContracturaPorCodear)
+			cantidadDeTrabajos = cantidadDeTrabajos + 1
 		}
 	}
 
@@ -92,4 +112,3 @@ object adriano {
 	}
 
 }
-
